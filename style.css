@@ -331,15 +331,18 @@ main{
   animation: floatNote 4s ease-in-out infinite;
 }
 
-.footer {
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  padding: 15px;
-  font-size: 14px;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  z-index: 999;
   color: white;
-  background: rgba(0,0,0,0.2);
-  margin-top: 30px;
-  border-radius: 10px;
 }
+
 
 
 body.light footer {
