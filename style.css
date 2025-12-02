@@ -340,6 +340,7 @@ main{
   margin-top: 30px;
   border-radius: 10px;
   z-index: 9999;
+  bottom:0;
 }
 
 body.light footer {
