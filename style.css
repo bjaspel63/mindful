@@ -341,7 +341,7 @@ main{
   border-radius: 10px;
   z-index: 9999;
   bottom:0;
-  position:fixed;
+  position:sticky;
 }
 
 body.light footer {
