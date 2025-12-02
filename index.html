@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>SISB NR Mindful Kids</title>
+  <link rel="icon" type="image/png" href="favicon.png">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="light">
+  <header>
+    <h1>🌈 Mindful Kids</h1>
+
+    <!-- Tabs -->
+    <div class="tabs">
+      <button class="tab-btn" data-tab="bubble">🐾 Animal Breathing</button>
+      <button class="tab-btn" data-tab="box">🔷 Box Breathing</button>
+      <button class="tab-btn" data-tab="mood">😊 Mood Check-in</button>
+      <button class="tab-btn" data-tab="sounds">🎵 Calm Sounds</button>
+      <button class="tab-btn" data-tab="stories">📚 Mindful Stories</button>
+    </div>
+
+    <!-- Theme buttons -->
+    <div id="themeButtons" class="theme-button-row"></div>
+  </header>
+
+  <main>
+    <!-- Animal Breathing -->
+    <section id="bubble" class="tab-content">
+      <div class="bubble-outer" id="mainBubble" aria-live="polite" role="img">
+        <div class="bubble-inner" id="bubbleInner">
+          <div id="bubbleAnimal" class="bubble-animal">🐻</div>
+        </div>
+      </div>
+      <p id="breathingText">Tap Start to begin</p>
+      <div class="controls">
+        <button id="bubbleStart">Start</button>
+        <button id="bubblePause">Pause</button>
+      </div>
+      <div id="animalButtons" class="animal-button-row"></div>
+    </section>
+
+    <!-- Box Breathing -->
+    <section id="box" class="tab-content">
+      <h2>🔷 Box Breathing</h2>
+      <div class="boxbreath-wrapper">
+        <svg id="boxSquare" width="260" height="260">
+          <!-- Outer Square -->
+          <rect x="20" y="20" width="220" height="220"
+                fill="none" stroke="#8fd3ff" stroke-width="6"
+                stroke-linecap="round"></rect>
+          <!-- Animated Line -->
+          <line id="boxLine" x1="20" y1="20" x2="20" y2="20"
+                stroke="#ffb703" stroke-width="6" stroke-linecap="round"/>
+        </svg>
+        <div id="boxAnimal" class="boxbreath-animal">🐢</div>
+      </div>
+      <p id="boxText">Tap Start</p>
+      <div class="controls">
+        <button id="boxStart">Start</button>
+        <button id="boxPause">Stop</button>
+      </div>
+    </section>
+
+    <!-- Mood Check-in -->
+    <section id="mood" class="tab-content active">
+      <p>How are you feeling today?</p>
+      <div class="emoji-row" id="moodCards"></div>
+      <p id="moodMessage"></p>
+    </section>
+
+    <!-- Calm Sounds -->
+    <section id="sounds" class="tab-content">
+      <div class="sound-grid">
+        <div class="sound-card" data-sound="rain">🌧️ Rain</div>
+        <div class="sound-card" data-sound="forest">🌳 Forest</div>
+        <div class="sound-card" data-sound="wave">🌊 Waves</div>
+        <div class="sound-card" data-sound="chimes">🔔 Chimes</div>
+      </div>
+      <button id="stopSounds" class="stop-sound-btn">Stop</button>
+    
+      <!-- Full screen visuals -->
+      <div id="soundVisualContainer"></div>
+    </section>
+
+
+
+    <!-- Mindful Stories -->
+    <section id="stories" class="tab-content">
+      <div id="storyGrid" class="story-grid"></div>
+    </section>
+
+    <!-- Story Modal -->
+    <div id="storyModal" class="modal">
+      <div class="modal-content">
+        <h2 id="storyTitle"></h2>
+        <p id="storyText"></p>
+        <button id="closeStory">Close</button>
+      </div>
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
