@@ -331,31 +331,14 @@ main{
   animation: floatNote 4s ease-in-out infinite;
 }
 
-/* Make body fill screen correctly */
-html, body {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-/* Stack content vertically */
-body {
-  display: flex;
-  flex-direction: column;
-}
-
-/* Main expands automatically */
-main {
-  flex: 1;
-}
-
-/* Footer stays at bottom */
-footer {
+.footer {
   text-align: center;
-  padding: 12px;
-  font-size: 15px;
+  padding: 15px;
+  font-size: 14px;
   color: white;
-  font-weight: bold;
+  background: rgba(0,0,0,0.2);
+  margin-top: 30px;
+  border-radius: 10px;
 }
 
 
