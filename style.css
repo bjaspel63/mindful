@@ -331,17 +331,33 @@ main{
   animation: floatNote 4s ease-in-out infinite;
 }
 
+/* Make body fill screen correctly */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* Stack content vertically */
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Main expands automatically */
+main {
+  flex: 1;
+}
+
+/* Footer stays at bottom */
 footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
   text-align: center;
   padding: 12px;
-  font-weight: bold;
-  font-size: 16px;
-  z-index: 999;
+  font-size: 15px;
   color: white;
+  font-weight: bold;
 }
+
 
 body.light footer {
   background: #74c0fc;
