@@ -339,6 +339,7 @@ main{
   background: rgba(0,0,0,0.2);
   margin-top: 30px;
   border-radius: 10px;
+  z-index: 9999;
 }
 
 body.light footer {
