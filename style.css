@@ -331,24 +331,36 @@ main{
   animation: floatNote 4s ease-in-out infinite;
 }
 
-.footer {
+footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   text-align: center;
-  padding: 15px;
-  font-size: 14px;
+  padding: 12px;
+  font-weight: bold;
+  font-size: 16px;
+  z-index: 999;
   color: white;
-  background: rgba(0,0,0,0.2);
-  margin-top: 30px;
-  border-radius: 10px;
 }
 
-body.light .footer {
-  color: #333;
-  background: #dff6ff;
+body.light footer {
+  background: #74c0fc;
+  color: #00324d;
 }
 
-body.dark .footer {
+body.forest footer {
+  background: #2e8b57;
+  color: #ffffff;
+}
+
+body.ocean footer {
+  background: #0b74b8;
   color: white;
-  background: #111;
+}
+
+body.sunset footer {
+  background: #ff5470;
+  color: white;
 }
 
 @keyframes floatNote{
