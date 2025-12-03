@@ -212,7 +212,7 @@ function animateBoxLine(phase){
 /* ----- Mood Check-in ----- */
 const moodMessages = {
   happy:"Yay! Keep sharing your sunshine! ☀️",
-  okay:"It's okay to feel okay — try a deep breath 🌬️",
+  okay:"It's okay not to feel okay — try a deep breath 🌬️",
   sad:"I'm sorry to hear that. 3 slow breaths might help 💛",
   angry:"Let's cool down together. Breathe slowly 🫧",
   tired:"You deserve rest. Close your eyes for 5 seconds 😴",
